@@ -9,8 +9,7 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Ray Zane"]
   spec.email         = ["raymondzane@gmail.com"]
 
-  spec.summary       = %q{Functional utilities for Symbols as procs.}
-  spec.description   = %q{Bind, partial, partial_right, for Symbols.}
+  spec.summary       = %q{A set of functional utilities for working with callables.}
   spec.homepage      = "https://github.com/rzane/proc_utils"
   spec.license       = "MIT"
 
