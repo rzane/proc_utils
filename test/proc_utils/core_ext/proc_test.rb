@@ -56,7 +56,7 @@ module ProcUtils
 
       def test_memoize
         misses = 0
-        func     = proc { misses += 1}
+        func     = proc { misses += 1 }
         subject  = func.memoize
         one, two = 2.times.map { Object.new }
 

@@ -2,6 +2,7 @@ require "proc_utils/version"
 
 module ProcUtils
   ALL = %i(partial partial_right bind flip wrap compose memoize once)
+  SYM = ALL - %i(flip wrap compose)
 
   class << self
     def partial(subject, *bound_args)
