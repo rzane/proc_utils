@@ -1,7 +1,7 @@
 require "proc_utils/version"
 
 module ProcUtils
-  NAMES = %i(partial partial_right bind flip wrap compose memoize once)
+  ALL = %i(partial partial_right bind flip wrap compose memoize once)
 
   class << self
     def partial(subject, *bound_args)

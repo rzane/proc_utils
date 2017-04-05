@@ -3,8 +3,8 @@ require 'proc_utils'
 module ProcUtils
   module CoreExt
     module Symbol
-      ProcUtils::NAMES.each do |meth|
-        define_method name do |*args|
+      ProcUtils::ALL.each do |meth|
+        define_method meth do |*args|
           ProcUtils.send(meth, to_proc, *args)
         end
       end
