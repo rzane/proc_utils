@@ -14,13 +14,13 @@ emails.each(&:deliver)
 
 However, if your method takes an argument, you need to refactor to use a block.
 
-```
+```ruby
 emails.each { |email| email.deliver(:hello) }
 ```
 
 What if you could do this?
 
-```
+```ruby
 emails.each(&:deliver.partial(:hello))
 ```
 
@@ -42,9 +42,7 @@ Or install it yourself as:
 
 ## Extending Procs
 
-Because this is a core extension, you have to opt-in.
-
-```
+```ruby
 require 'proc_utils/core_ext/proc'
 ```
 
@@ -61,7 +59,7 @@ Now, procs will have the following methods:
 
 ## Extending Symbols
 
-```
+```ruby
 require 'proc_utils/core_ext/symbol'
 ```
 
