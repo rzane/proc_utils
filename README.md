@@ -77,7 +77,7 @@ I get it, core extensions are scary. Lucky for you, ProcUtils offers pure functi
 
 For example:
 
-```
+```ruby
 func = proc { |name| puts name }
 func = ProcUtils.bind(func, 'Rick Flair')
 func.call
